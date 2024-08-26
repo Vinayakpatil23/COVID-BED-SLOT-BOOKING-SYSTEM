@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Details</title>
+    <style>
+    td{
+        padding:30px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hospital Details</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hospital Code</th>
+                <th>Hospital Name</th>
+                <th>Normal Beds</th>
+                <th>HICU Beds</th>
+                <th>ICU Beds</th>
+                <th>Ventilator Beds</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for booking in booking_details %}
+            <tr>
+                <td>{{ booking.id }}</td>
+                <td>{{ booking.hcode }}</td>
+                <td>{{ booking.hicubed }}</td>
+                <td>{{ booking. }}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
